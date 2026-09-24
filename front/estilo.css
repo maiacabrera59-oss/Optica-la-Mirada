@@ -1,0 +1,293 @@
+/* ============================================================
+   Estilos - Óptica La Mirada
+   Paleta: crema + rosa nude + marrón
+   ============================================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #fdf8f5;
+    color: #493a36;
+}
+
+/* --- Encabezado --- */
+
+.encabezado {
+    background: linear-gradient(135deg, #c9a79c, #9b776d);
+    color: #ffffff;
+    text-align: center;
+    padding: 28px 16px;
+    box-shadow: 0 3px 10px rgba(73, 58, 54, 0.12);
+}
+
+.encabezado h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+}
+
+.encabezado p {
+    opacity: 0.95;
+    font-size: 15px;
+}
+
+/* --- Contenido principal --- */
+
+.principal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 28px auto;
+    padding: 0 16px;
+    align-items: flex-start;
+}
+
+.seccion {
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(73, 58, 54, 0.08);
+    padding: 22px;
+    flex: 1 1 300px;
+    border: 1px solid #eadbd5;
+}
+
+.seccion.ancha {
+    flex: 2 1 620px;
+}
+
+.seccion h2 {
+    color: #76564d;
+    margin-bottom: 16px;
+    font-size: 21px;
+}
+
+/* --- Formulario --- */
+
+label {
+    display: block;
+    font-weight: 600;
+    margin: 13px 0 5px;
+    color: #5b4741;
+}
+
+select,
+textarea,
+input[type="number"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px 11px;
+    border: 1px solid #d8c3bc;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: inherit;
+    background-color: #fffdfc;
+    color: #493a36;
+    transition: 0.2s;
+}
+
+select:focus,
+textarea:focus,
+input[type="number"]:focus,
+input[type="text"]:focus {
+    outline: none;
+    border-color: #b58c82;
+    box-shadow: 0 0 0 3px rgba(181, 140, 130, 0.15);
+}
+
+/* --- Botones --- */
+
+.btn {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-principal {
+    width: 100%;
+    margin-top: 18px;
+    background-color: #876158;
+    color: #ffffff;
+}
+
+.btn-principal:hover {
+    background-color: #6f4e46;
+    transform: translateY(-1px);
+}
+
+.btn-iniciar {
+    background-color: #a98278;
+    color: #ffffff;
+}
+
+.btn-terminar {
+    background-color: #78916e;
+    color: #ffffff;
+}
+
+.btn:hover {
+    opacity: 0.92;
+}
+
+/* --- Mensajes --- */
+
+.mensaje {
+    margin-top: 10px;
+    font-weight: 600;
+    min-height: 20px;
+}
+
+.mensaje.ok {
+    color: #63805c;
+}
+
+.mensaje.error {
+    color: #b45f55;
+}
+
+/* --- Nota --- */
+
+.nota {
+    margin-top: 18px;
+    background-color: #faf0ec;
+    border-left: 4px solid #b58c82;
+    border-radius: 0 8px 8px 0;
+    padding: 11px 13px;
+    font-size: 13px;
+    color: #6b5149;
+}
+
+/* --- Tabla --- */
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.tabla th {
+    background-color: #876158;
+    color: #ffffff;
+    text-align: left;
+    padding: 10px 9px;
+}
+
+.tabla td {
+    border-bottom: 1px solid #eee2dd;
+    padding: 10px 9px;
+    vertical-align: middle;
+}
+
+.tabla tbody tr:nth-child(even) td {
+    background-color: #fdf8f6;
+}
+
+.tabla tr:hover td {
+    background-color: #f9eeea;
+}
+
+/* --- Estados --- */
+
+.estado {
+    display: inline-block;
+    border-radius: 20px;
+    padding: 4px 11px;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+/* --- Estados de pedidos --- */
+
+.estado-encargado {
+    background-color: #f8e6c9;
+    color: #8a6237;
+}
+
+.estado-listo {
+    background-color: #eadfd0;
+    color: #705b48;
+}
+
+.estado-entregado {
+    background-color: #e3eddf;
+    color: #58704f;
+}
+
+/* --- Sin stock --- */
+
+.sin-stock {
+    color: #b45f55;
+    font-weight: 700;
+}
+
+/* --- Terminar --- */
+
+.accion-terminar {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.accion-terminar input {
+    width: 110px;
+}
+
+/* --- Pie de página --- */
+
+.pie {
+    background-color: #634b44;
+    color: #fff8f5;
+    text-align: center;
+    padding: 16px;
+    margin-top: 32px;
+    font-size: 13px;
+}
+
+/* --- Responsive --- */
+
+@media (max-width: 800px) {
+    .principal {
+        flex-direction: column;
+    }
+
+    .seccion,
+    .seccion.ancha {
+        width: 100%;
+    }
+
+    .tabla {
+        font-size: 12px;
+    }
+
+    .tabla th,
+    .tabla td {
+        padding: 7px 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .encabezado h1 {
+        font-size: 25px;
+    }
+
+    .seccion {
+        padding: 17px;
+    }
+
+    .tabla {
+        display: block;
+        overflow-x: auto;
+    }
+}
