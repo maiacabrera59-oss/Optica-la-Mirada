@@ -1,5 +1,5 @@
 
-const pedidosService = require("../services/pedidos.service");
+const pedidosService = require("../services/PedidosService");
 
 const CRISTALES_VALIDOS = ["Monofocal", "Bifocal", "Progresivo", "Sol"];
 
